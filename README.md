@@ -6,10 +6,10 @@ STATE
 
 COMPONENTS
 
-  Navbar
-    logo, nav links
-    cart icon + count
-    login btn + get started btn
+  Navbar done
+    logo, nav links done
+    cart icon + count done
+    login btn + get started btn done
 
   Banner
     bullet badge
