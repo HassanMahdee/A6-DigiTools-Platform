@@ -21,14 +21,14 @@ const Navbar = () => {
 
   return (
     <div
-      className={`sticky top-0 z-50 bg-base-100 border-b border-base-300 py-3 md:py-6 px-4 md:px-52 flex items-center justify-between ${isScrolled ? "shadow-md" : ""}`}
+      className={`sticky top-0 z-50 bg-base-100 border-b border-base-300 py-3 lg:py-6 px-4 lg:px-52 flex items-center justify-between ${isScrolled ? "shadow-md" : ""}`}
     >
       <div>
         <a href="/" className="text-primary text-4xl font-extrabold">
           DigiTools
         </a>
       </div>
-      <div className="hidden md:flex">
+      <div className="hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
             <a>Products</a>
@@ -47,7 +47,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="flex items-center md:gap-2">
+      <div className="flex items-center lg:gap-2">
         <button className="btn btn-ghost btn-circle indicator">
           <span className="indicator-item badge badge-outline badge-sm">0</span>
           <BsCart2 />
@@ -65,28 +65,28 @@ const Navbar = () => {
           get started
         </button>
         <button
-          className="btn btn-ghost btn-circle md:hidden"
+          className="btn btn-ghost btn-circle lg:hidden"
           onClick={() => setMenuToggle(!menuToggle)}
         >
           {menuToggle ? <IoIosCloseCircleOutline /> : <CgMenuGridO />}
         </button>
       </div>
       <div
-        className={`md:hidden absolute top-16 left-0 w-full bg-base-100 shadow-md px-6 pb-4 flex flex-col gap-1 items-end justify-center transition-all duration-300 ease-in-out ${menuToggle ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"}`}
+        className={`lg:hidden absolute top-16 left-0 w-full bg-base-100 shadow-md px-6 pb-4 flex flex-col gap-1 items-end justify-center transition-all duration-300 ease-in-out ${menuToggle ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"}`}
       >
-        <a href="#" className="py-1 border-b border-base-300 ">
+        <a href="#" className="py-1 border-b border-base-300 text-gray-600">
           Products
         </a>
-        <a href="#" className="py-1 border-b border-base-300">
+        <a href="#" className="py-1 border-b border-base-300 text-gray-600">
           Features
         </a>
-        <a href="#" className="py-1 border-b border-base-300">
+        <a href="#" className="py-1 border-b border-base-300 text-gray-600">
           Pricing
         </a>
-        <a href="#" className="py-1 border-b border-base-300">
+        <a href="#" className="py-1 border-b border-base-300 text-gray-600">
           Testimonials
         </a>
-        <a href="#" className="py-1 border-b border-base-300">
+        <a href="#" className="py-1 border-b border-base-300 text-gray-600">
           FAQ
         </a>
       </div>

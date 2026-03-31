@@ -2,13 +2,13 @@ import React from "react";
 import bannerImage from "../../assets/banner.png";
 const Banner = () => {
   return (
-    <div className="bg-base-200 px-8 md:px-52 py-12 md:py-20 relative">
+    <div className="bg-base-200 px-8 lg:px-52 py-12 lg:py-20 relative">
       <div className="flex items-center justify-between w-full">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:hidden"
           style={{ backgroundImage: `url(${bannerImage})` }}
         ></div>
-        <div className="absolute inset-0 bg-base-100/70 md:hidden"></div>
+        <div className="absolute inset-0 bg-base-100/70 lg:hidden"></div>
 
         <div className="max-w-lg flex-col space-y-4 z-10">
           <div className="badge bg-primary/10 text-primary gap-2 py-3 px-4 rounded-full">
@@ -35,7 +35,7 @@ const Banner = () => {
             </button>
           </div>
         </div>
-        <img src={bannerImage} className="hidden md:block" />
+        <img src={bannerImage} className="hidden lg:block w-full" />
       </div>
     </div>
   );
