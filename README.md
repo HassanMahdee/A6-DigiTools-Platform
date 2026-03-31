@@ -12,11 +12,11 @@ COMPONENTS
     login btn + get started btn done
 
   Banner
-    bullet badge
-    heading
-    description
-    image
-    get started btn + demo video btn
+    bullet badge done
+    heading done
+    description done
+    image done
+    get started btn + demo video btn done
 
   Stats
     3 stats, purple bar
@@ -49,10 +49,13 @@ COMPONENTS
     static
 
   Footer
-    logo, link columns, socials
+    logo, link columns, socials done
 
 
 HANDLERS
+
+  tabToggle
+    switch activeSection
 
   addToCart
     already in cart → toast, return

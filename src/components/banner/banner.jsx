@@ -2,7 +2,7 @@ import React from "react";
 import bannerImage from "../../assets/banner.png";
 const Banner = () => {
   return (
-    <div className="bg-base-200 px-8 lg:px-52 py-12 lg:py-20 relative">
+    <div className="bg-base-200 px-8 lg:px-52 py-12 lg:py-0 relative">
       <div className="flex items-center justify-between w-full">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:hidden"
