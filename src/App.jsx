@@ -8,6 +8,7 @@ import ProductTab from "./components/product_tab/productTab";
 import Steps from "./components/steps/steps";
 import Stats from "./components/stats/stats";
 import Cart from "./components/cart/cart";
+import { Suspense } from "react";
 
 function App() {
   return (
@@ -18,7 +19,11 @@ function App() {
       <ProductTab />
       <Cart />
       <Steps />
-      <Pricing />
+      <Suspense
+        fallback={<span className="loading loading-bars loading-xl"></span>}
+      >
+        <Pricing />
+      </Suspense>
       <CTA />
       <Footer />
     </>

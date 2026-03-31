@@ -40,13 +40,13 @@ COMPONENTS
       Remove btn
 
   Steps
-    static
+    static done
 
   Pricing
-    static, middle tier highlighted
+    static, middle tier highlighted done
 
   CTA
-    static
+    static done
 
   Footer
     logo, link columns, socials done
