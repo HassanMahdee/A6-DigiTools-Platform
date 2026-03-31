@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blog posts, and marketing copy with advanced AI assistance.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "icon": "../../assets/products/writing_2327400 1.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "Access 2000+ professional design templates for social media, marketing, and presentations.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["2000+ templates", "Monthly updates", "Commercial license"],
+    "icon": "../../assets/products/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Royalty-free photos, videos, and graphics for all your creative projects.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["10K+ assets", "Commercial use", "No attribution"],
+    "icon": "../../assets/products/camera_8775444-1.png"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks and supercharge your workflow with powerful integrations.",
+    "price": 79,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["70+ automations", "API access", "Custom workflows"],
+    "icon": "../../assets/products/operation.png"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes that beat ATS systems and land more interviews.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "../../assets/products/portfolio.png"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "Complete toolkit for creating engaging social media content across all platforms.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"],
+    "icon": "../../assets/products/social-media.png"
+  },
+  {
+    "id": 7,
+    "name": "SEO Analyzer Pro",
+    "description": "Audit your website, track rankings, and outrank competitors with data-driven SEO insights.",
+    "price": 59,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Full site audit", "Keyword tracking", "Competitor analysis"],
+    "icon": "../../assets/products/seo.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Video Editing Suite",
+    "description": "Professional video editing tools with AI-powered features for creators and businesses.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["4K export", "AI background removal", "100+ transitions"],
+    "icon": "../../assets/products/vid.jpg"
+  }
+]
