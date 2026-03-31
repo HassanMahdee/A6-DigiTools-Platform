@@ -19,7 +19,7 @@ COMPONENTS
     get started btn + demo video btn done
 
   Stats
-    3 stats, purple bar
+    3 stats, purple bar done
 
   MainSection
     heading, description
