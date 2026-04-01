@@ -5,11 +5,21 @@ import { toast } from "react-toastify";
 
 const ProductCard = ({ product, cart, setCart }) => {
   const inCart = cart.find((item) => item.id === product.id);
+  const tagStyles = {
+    success: { background: "lightgreen", color: "green", borderColor: "green" },
+    warning: {
+      background: "lightyellow",
+      color: "goldenrod",
+      borderColor: "goldenrod",
+    },
+    info: { background: "lightblue", color: "blue", borderColor: "blue" },
+  };
   return (
     <div className="card shadow-lg p-4 rounded-4xl flex flex-col gap-6 hover:scale-105 transition-all duration-200 hover:shadow-lg hover:bg-base-300">
       {product.tag && (
         <div
-          className={`badge badge-${product.tagType} opacity-75 badge-sm absolute top-2 right-2 rounded-full p-3`}
+          className={`badge opacity-75 badge-sm absolute top-2 right-2 rounded-full p-3`}
+          style={tagStyles[product.tagType]}
         >
           <p className="text-sm font-medium">{product.tag}</p>
         </div>

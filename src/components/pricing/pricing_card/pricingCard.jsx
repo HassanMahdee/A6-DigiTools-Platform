@@ -14,7 +14,7 @@ const PricingCard = ({ pricingCard }) => {
     >
       <div className="card-body flex flex-col justify-between px-20">
         {pricingCard.tag && (
-          <span className="badge badge-xs badge-warning">
+          <span className="badge badge-md badge-warning absolute -top-2 left-1/2 transform -translate-x-1/2">
             {pricingCard.tag}
           </span>
         )}

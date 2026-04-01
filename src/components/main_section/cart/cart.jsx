@@ -19,7 +19,7 @@ const Cart = ({ cart, setCart, setActiveTab }) => {
               key={item.id}
               className="flex justify-between gap-3 items-center p-4 "
             >
-              <img src={item.icon} alt="" />
+              <img src={item.icon} alt={item.name} className="w-10" />
               <div className="flex flex-col w-full">
                 <h4 className="text-lg font-semibold">{item.name}</h4>
                 <p className="font-light">
