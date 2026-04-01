@@ -42,6 +42,7 @@ const ProductCard = ({ product, cart, setCart }) => {
             color: inCart ? "black" : "white",
           }}
           onClick={() => {
+            if (inCart) return toast.info("Product already in cart!");
             setCart([...cart, product]);
             toast.success("Product added to cart!");
           }}

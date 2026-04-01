@@ -2,11 +2,12 @@ import React from "react";
 import { MdOutlineDeleteForever } from "react-icons/md";
 import { toast } from "react-toastify";
 
-const Cart = ({ cart, setCart }) => {
+const Cart = ({ cart, setCart, setActiveTab }) => {
   const total = cart.reduce((sum, item) => sum + item.price, 0);
   const checkOut = () => {
     toast.success("Order placed successfully!");
     setCart([]);
+    setActiveTab("all");
   };
   return (
     <div>

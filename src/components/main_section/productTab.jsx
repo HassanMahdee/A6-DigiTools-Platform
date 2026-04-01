@@ -66,7 +66,7 @@ const ProductTab = ({
           ))}
         </div>
       ) : (
-        <Cart cart={cart} setCart={setCart} />
+        <Cart cart={cart} setCart={setCart} setActiveTab={setActiveTab} />
       )}
     </div>
   );
