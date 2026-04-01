@@ -10,13 +10,23 @@ import Stats from "./components/stats/stats";
 import Cart from "./components/cart/cart";
 import { Suspense } from "react";
 
+const fetchProductList = async () => {
+  const res = await fetch("/data/productList.json");
+  return res.json();
+}
+const productListPromise = fetchProductList();
+
 function App() {
   return (
     <>
       <Navbar />
       <Banner />
       <Stats />
-      <ProductTab />
+      <Suspense
+        fallback={<span className="loading loading-bars loading-xl"></span>}
+      >
+        <ProductTab productPromise={productListPromise} />
+      </Suspense>
       <Cart />
       <Steps />
       <Suspense

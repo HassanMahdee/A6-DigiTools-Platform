@@ -1,12 +1,12 @@
 import React from "react";
-import bannerImage from "../../assets/banner.png";
+
 const Banner = () => {
   return (
     <div className="bg-base-200 px-8 lg:px-52 py-32 lg:py-0 relative">
       <div className="flex items-center justify-between w-full">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:hidden"
-          style={{ backgroundImage: `url(${bannerImage})` }}
+          style={{ backgroundImage: `url("/assets/banner.png")` }}
         ></div>
         <div className="absolute inset-0 bg-base-100/70 lg:hidden"></div>
 
@@ -35,7 +35,7 @@ const Banner = () => {
             </button>
           </div>
         </div>
-        <img src={bannerImage} className="hidden lg:block w-full" />
+        <img src="/assets/banner.png" className="hidden lg:block w-full" />
       </div>
     </div>
   );
