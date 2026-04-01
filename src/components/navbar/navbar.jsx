@@ -5,7 +5,7 @@ import { FaRegUser } from "react-icons/fa6";
 import { CgMenuGridO } from "react-icons/cg";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
-const Navbar = () => {
+const Navbar = ({ cart, setActiveTab }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuToggle, setMenuToggle] = useState(false);
 
@@ -18,7 +18,22 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  const handleCartbtn = () => {
+    setActiveTab("cart");
+    setTimeout(() => {
+      document
+        .getElementById("main-section")
+        .scrollIntoView({ behavior: "smooth" });
+    }, 50);
+  };
+  const handleGetStartedbtn = () => {
+    setActiveTab("all");
+    setTimeout(() => {
+      document
+        .getElementById("main-section")
+        .scrollIntoView({ behavior: "smooth" });
+    }, 50);
+  };
   return (
     <div
       className={`sticky top-0 z-50 bg-base-100 border-b border-base-300 py-3 lg:py-6 px-4 lg:px-52 flex items-center justify-between ${isScrolled ? "shadow-md" : ""}`}
@@ -48,8 +63,13 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="flex items-center lg:gap-2">
-        <button className="btn btn-ghost btn-circle indicator">
-          <span className="indicator-item badge badge-outline badge-sm">0</span>
+        <button
+          onClick={handleCartbtn}
+          className="btn btn-ghost btn-circle indicator"
+        >
+          <span className="indicator-item badge badge-outline badge-sm">
+            {cart.length}
+          </span>
           <BsCart2 />
         </button>
         <button className="btn btn-ghost rounded-full hover:scale-105 transition-transform">
@@ -59,6 +79,7 @@ const Navbar = () => {
           <span className="hidden md:block">Login</span>
         </button>
         <button
+          onClick={handleGetStartedbtn}
           className="btn text-white rounded-full hidden md:block hover:scale-105 transition-transform hover:shadow-md"
           style={{ background: "var(--primary-gradient)" }}
         >

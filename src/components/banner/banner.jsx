@@ -1,6 +1,14 @@
 import React from "react";
 
-const Banner = () => {
+const Banner = ({ setActiveTab }) => {
+  const handleExploreProducts = () => {
+    setActiveTab("all");
+    setTimeout(() => {
+      document
+        .getElementById("main-section")
+        .scrollIntoView({ behavior: "smooth" });
+    }, 50);
+  };
   return (
     <div className="bg-base-200 px-8 lg:px-52 py-32 lg:py-0 relative">
       <div className="flex items-center justify-between w-full">
@@ -25,6 +33,7 @@ const Banner = () => {
           </p>
           <div className="flex gap-2">
             <button
+              onClick={handleExploreProducts}
               className="btn rounded-full text-white hover:scale-105 transition-all duration-300 ease-in-out"
               style={{ background: "var(--primary-gradient)" }}
             >

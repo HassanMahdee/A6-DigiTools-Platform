@@ -4,7 +4,13 @@ import { FaRegCheckCircle } from "react-icons/fa";
 const PricingCard = ({ pricingCard }) => {
   return (
     <div
-      className={`card ${pricingCard.highlighted ? "bg-primary text-primary-content" : "bg-base-100"} hover:scale-105 shadow-lg hover:shadow-xl transition-transform duration-300 ${pricingCard.highlighted ? "hover:bg-indigo-900" : "hover:bg-base-300"} w-full rounded-4xl`}
+      className={`card hover:scale-105 shadow-lg hover:shadow-xl transition-transform duration-300 w-full rounded-4xl`}
+      style={{
+        background: pricingCard.highlighted
+          ? "var(--primary-gradient)"
+          : "white",
+        color: pricingCard.highlighted ? "white" : "black",
+      }}
     >
       <div className="card-body flex flex-col justify-between px-20">
         {pricingCard.tag && (
@@ -30,7 +36,13 @@ const PricingCard = ({ pricingCard }) => {
           ))}
         </ul>
         <button
-          className={`btn w-fit lg:w-full mt-4 rounded-full ${pricingCard.highlighted ? "btn-white" : "btn-primary"} hover:scale-105 transition-transform duration-300 self-center`}
+          className={`btn w-fit lg:w-full mt-4 rounded-full hover:scale-105 transition-transform duration-300 self-center`}
+          style={{
+            background: pricingCard.highlighted
+              ? "white"
+              : "var(--primary-gradient)",
+            color: pricingCard.highlighted ? "black" : "white",
+          }}
         >
           {pricingCard.cta}
         </button>

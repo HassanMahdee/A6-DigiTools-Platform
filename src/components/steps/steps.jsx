@@ -2,7 +2,7 @@ import React from "react";
 
 const Steps = () => {
   return (
-    <div className="bg-base-200 border-y-2 border-teal-500 px-4 lg:px-52 py-20 flex flex-col gap-10">
+    <div className="bg-base-200 border-y-2 border-teal-500 px-4 lg:px-52 md:py-25 py-12 flex flex-col gap-10">
       <div className="flex flex-col items-center gap-4">
         <h2 className="text-3xl font-bold text-center">
           Get Started In 3 Steps
@@ -12,7 +12,7 @@ const Steps = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="card bg-base-100 shadow-xl flex flex-col items-center p-8 pt-4 pr-6 gap-4 hover:scale-105 transition-transform">
+        <div className="card bg-base-100 shadow-xl flex flex-col items-center p-8 pt-4 pr-6 gap-4">
           <span className="self-end bg-primary rounded-full text-white w-6 h-6 flex items-center justify-center">
             1
           </span>
@@ -24,7 +24,7 @@ const Steps = () => {
             Sign up for free in seconds. No credit card required to get started.
           </p>
         </div>
-        <div className="card bg-base-100 shadow-xl flex flex-col items-center p-8 pt-4 pl-6 gap-4 hover:scale-105 transition-transform">
+        <div className="card bg-base-100 shadow-xl flex flex-col items-center p-8 pt-4 pl-6 gap-4">
           <span className="self-end bg-primary rounded-full text-white w-6 h-6 flex items-center justify-center">
             2
           </span>
@@ -37,7 +37,7 @@ const Steps = () => {
             category, price, or rating.
           </p>
         </div>
-        <div className="card bg-base-100 shadow-xl flex flex-col items-center p-8 pt-4 pl-6 gap-4 hover:scale-105 transition-transform">
+        <div className="card bg-base-100 shadow-xl flex flex-col items-center p-8 pt-4 pl-6 gap-4">
           <span className="self-end bg-primary rounded-full text-white w-6 h-6 flex items-center justify-center">
             3
           </span>
